@@ -5,3 +5,10 @@ a) es una herramienta que registra los cambios realizados en archivos a lo largo
 # Pregunta 2
 
 b) El repositorio local se maneja en el dispositivo del usuario y el remoto en linea desde git hub.
+
+# Pregunta 3
+
+c)
+. Git funciona localmente, git hub en linea
+. Git se utiliza de manera indivudual desde un dispositivo, git hub esta pensado pra el trabajo en equipo entre varios dispositivos
+. Git es una aplicación, git hub un servicio
