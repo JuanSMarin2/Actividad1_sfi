@@ -12,3 +12,13 @@ c)
 . Git funciona localmente, git hub en linea
 . Git se utiliza de manera indivudual desde un dispositivo, git hub esta pensado pra el trabajo en equipo entre varios dispositivos
 . Git es una aplicación, git hub un servicio
+
+
+# Pregunta 4
+
+## Area de trabajo: 
+El área de trabajo es el directorio del sistema de archivos local donde se trabaja con los archivos del proyecto
+## Area de preparacion: 
+El área de preparación es un espacio intermedio entre el área de trabajo y el repositorio Git.
+## Directorio git:
+Es donde Git almacena toda la información del proyecto.
