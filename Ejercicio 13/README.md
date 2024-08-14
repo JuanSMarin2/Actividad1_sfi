@@ -1,10 +1,4 @@
-## ¿Cómo se declara un puntero?
-Con *
-## ¿Cómo se define un puntero? (cómo se inicializa)
-Con & asignandole al puntero la dirección de otra variable.
-## ¿Cómo se obtiene la dirección de una variable?
-Usando & e igualando a la variable puntero
-## ¿Cómo se puede leer el contenido de una variable por medio de un puntero?
-Usando * de nuevo
-## ¿Cómo se puede escribir el contenido de una variable por medio de un puntero?
-Usando *puntero = valor; para asignar un valor a la variable a la que apunta el puntero.
+# Hipotesis: 
+Va a iniciar a correr en el setup que lleva a task1 que asigna Task1States en el estado de INIT que hace que empieze a correr a 115200 baudios y asigna el estado WAIT_DATA a Task1States, después se ejecuta el loop que lleva de nuevo a task1 y entra en el caso de  WAIT_DATA que revisa si ha pasado un dato por el puerto serial y si se cumple, crea la variable var y la iguala a 0, crea el puntero pvar y le asigna la dirección de var, se ejecuta la función printvar con el contenido de la variable por lo que lee 0, después se ejecuta changeVar con pvar y le asigna 10, se vuelve a leer printVar y esta vez lee 10; después se repite en un ciclo.
+
+## La hipotesis fue correcta.
