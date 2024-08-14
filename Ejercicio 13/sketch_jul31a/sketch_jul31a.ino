@@ -5,7 +5,7 @@ static void changeVar(uint32_t *pdata)
 
 static void printVar(uint32_t value)
 {
-    Serial.print("vr content: ");
+    Serial.print("var content: ");
     Serial.print(value);
     Serial.print('\n');
 }
