@@ -1,17 +1,16 @@
-## ¿Qué pasa cuando hago un Serial.available()? 
-Devuelve la cantidad de bytes disponibles para leer en el buffer de recepción.
+### Así se pueden leer 3 datos que han llegado al puerto serial:
 
-## ¿Qué pasa cuando hago un Serial.read()?
-Se lee el primer byte en la cola del buffer de recepción y se elimina.
+**`if**(Serial.available() >= 3){
+    int dataRx1 = Serial.read()
+    int dataRx2 = Serial.read()
+    int dataRx3 = Serial.read()
+}`
+## ¿Qué escenarios podría tener en este caso?
 
-## ¿Qué pasa cuando hago un Serial.read() y no hay nada en el buffer de recepción??
-Se devuelve -1.
+**`if**(Serial.available() >= 2){
+    int dataRx1 = Serial.read()
+    int dataRx2 = Serial.read()
+    int dataRx3 = Serial.read()
+}`
 
-## ¿Cuántos datos lee Serial.read()?
-Uno solo, el del siguiente byte de datos.
-
-## ¿Y si quiero leer más de un dato?
-Se puede usar un ciclo for ya que Serial.read() elimina el dato que lee.
-
-## ¿Qué pasa si te envían datos por serial y se te olvida llamar Serial.read()?
-Se puede llenar el buffer de recepción lo que puede impedir la lectura de proximos datos.
+Podria no haber suficientes bytes almacenados para llenar las 3 variables entonces podria declararse como -1.
